@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Customized for Clean Slate Mods
+-->
+<html>
+	<head>
+		<title>Clean Slate Mods</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Hero / Sign Up -->
+				<section id="hero">
+					<div class="hero-inner">
+						<h1 class="wordmark">Clean Slate Mods</h1>
+						<p class="tagline">A clean slate for your next build.</p>
+
+						<form id="signup-form" class="signup-form" method="post" action="https://formspree.io/f/YOUR_FORM_ID">
+							<input type="email" name="email" id="signup-email" placeholder="Enter your email" required />
+							<button type="submit">Get Early Access</button>
+						</form>
+						<p class="fineprint" id="signup-fineprint">No spam. Just updates as we get closer to launch.</p>
+					</div>
+				</section>
+
+			<!-- Definition -->
+				<section id="definition">
+					<div class="definition-inner">
+						<p class="term">clean&nbsp;slate</p>
+						<p class="pos"><em>noun</em></p>
+						<p class="def">a fresh start, free of assumptions — a chance to build something the right way, from the ground up.</p>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div id="copyright">
+						&copy; 2026 Clean Slate Mods
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				(function () {
+					var form = document.getElementById('signup-form');
+					var fineprint = document.getElementById('signup-fineprint');
+					if (!form) return;
+					form.addEventListener('submit', function (e) {
+						e.preventDefault();
+						var formData = new FormData(form);
+						var submitBtn = form.querySelector('button');
+						submitBtn.disabled = true;
+						submitBtn.textContent = 'Sending...';
+						fetch(form.action, {
+							method: 'POST',
+							body: formData,
+							headers: { 'Accept': 'application/json' }
+						}).then(function (response) {
+							if (response.ok) {
+								form.style.display = 'none';
+								fineprint.outerHTML = '<p class="form-success">You\'re on the list. We\'ll be in touch.</p>';
+							} else {
+								submitBtn.disabled = false;
+								submitBtn.textContent = 'Get Early Access';
+								fineprint.textContent = 'Something went wrong — please try again.';
+							}
+						}).catch(function () {
+							submitBtn.disabled = false;
+							submitBtn.textContent = 'Get Early Access';
+							fineprint.textContent = 'Something went wrong — please try again.';
+						});
+					});
+				})();
+			</script>
+
+	</body>
+</html>
