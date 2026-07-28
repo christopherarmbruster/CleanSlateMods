@@ -24,13 +24,14 @@ body#page-wrapper, #page-wrapper {
 #hero {
 	position: relative;
 	min-height: 100vh;
+	min-height: 100svh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: url("../../images/banner.jpg") center center;
 	background-size: cover;
 	background-color: var(--slate-black);
-	padding: 2em 1.5em;
+	padding: 3em 1.25em;
 	text-align: center;
 }
 
@@ -53,13 +54,14 @@ body#page-wrapper, #page-wrapper {
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	font-size: 2.4em;
+	font-size: clamp(1.5em, 5.5vw, 2.4em);
+	line-height: 1.25;
 	margin: 0 0 0.4em 0;
 }
 
 .tagline {
 	color: var(--slate-light);
-	font-size: 1.15em;
+	font-size: clamp(0.95em, 3vw, 1.15em);
 	letter-spacing: 0.03em;
 	margin: 0 0 2em 0;
 	font-weight: 300;
@@ -96,16 +98,27 @@ body#page-wrapper, #page-wrapper {
 
 .signup-form button {
 	flex: 0 0 auto;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 	background: var(--slate-blue);
 	color: var(--white);
 	border: none;
+	margin: 0;
 	padding: 0.9em 1.6em;
 	border-radius: 3px;
+	font-family: inherit;
 	font-size: 1em;
+	line-height: 1.2;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	cursor: pointer;
 	transition: background 0.2s ease;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .signup-form button:hover {
@@ -188,10 +201,35 @@ body#page-wrapper, #page-wrapper {
 
 /* ---------- Responsive ---------- */
 
-@media screen and (max-width: 600px) {
-	.wordmark { font-size: 1.7em; letter-spacing: 0.12em; }
-	.tagline { font-size: 1em; }
-	.signup-form { flex-direction: column; }
-	.signup-form button { width: 100%; }
+@media screen and (max-width: 736px) {
+	#hero { padding: 2.5em 1.25em; background-position: center 70%; }
+	.hero-inner { max-width: 100%; }
+	.signup-form {
+		flex-direction: column;
+		max-width: 340px;
+	}
+	.signup-form input[type="email"] {
+		flex-basis: auto;
+		width: 100%;
+	}
+	.signup-form button {
+		width: 100%;
+	}
 	#definition { padding: 4em 1.25em; }
+	.definition-inner .term { font-size: 1.5em; }
+	.definition-inner .def { font-size: 1em; }
+}
+
+@media screen and (max-width: 400px) {
+	.wordmark { letter-spacing: 0.1em; }
+	#hero { padding: 2em 1em; }
+	.signup-form input[type="email"],
+	.signup-form button {
+		padding: 0.85em 1em;
+	}
+	.fineprint { padding: 0 0.5em; }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+	#hero { min-height: auto; padding: 4em 1.5em; }
 }
