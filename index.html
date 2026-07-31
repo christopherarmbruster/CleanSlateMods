@@ -1,93 +1,180 @@
-<!DOCTYPE HTML>
-<!--
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	Customized for Clean Slate Mods
--->
-<html>
-	<head>
-		<title>Clean Slate Mods</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Slate Mods | Architect of Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #1e40af, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
 
-			<!-- Hero / Sign Up -->
-				<section id="hero">
-					<div class="hero-inner">
-						<h1 class="wordmark">Clean Slate Mods</h1>
-						<p class="tagline">A clean slate for your next build.</p>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter text-slate-900">CLEAN SLATE <span class="text-blue-700">MODS</span></div>
+            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
+                <a href="#how" class="hover:text-blue-700 transition">Process</a>
+                <a href="#pillars" class="hover:text-blue-700 transition">Pillars</a>
+                <a href="#proof" class="hover:text-blue-700 transition">Impact</a>
+                <a href="#about" class="hover:text-blue-700 transition">About</a>
+            </div>
+            <a href="#lead" class="bg-blue-700 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition">Get Started</a>
+        </div>
+    </nav>
 
-						<form id="signup-form" class="signup-form" method="post" action="https://formspree.io/f/YOUR_FORM_ID">
-							<input type="email" name="email" id="signup-email" placeholder="Enter your email" required />
-							<button type="submit">Get Early Access</button>
-						</form>
-						<p class="fineprint" id="signup-fineprint">No spam. Just updates as we get closer to launch.</p>
-					</div>
-				</section>
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="uppercase tracking-[0.3em] text-blue-700 font-bold text-sm">Scaling Small Businesses</span>
+            <h1 class="mt-6 text-5xl md:text-7xl font-extrabold leading-tight text-slate-900">
+                Scaling Small Businesses Through <span class="gradient-text">Human-Centric Operations.</span>
+            </h1>
+            <p class="mt-8 text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                We transform disorganized workflows into high-growth engines. By combining CRM mastery, process optimization, and team mentoring, we help you maximize your existing assets to drive measurable revenue—without the "tech-stack bloat."
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#lead" class="bg-slate-900 text-white px-10 py-4 rounded-lg text-lg font-bold hover:bg-slate-800 transition shadow-xl">Get Started Today</a>
+                <a href="#how" class="bg-white border border-slate-300 px-10 py-4 rounded-lg text-lg font-bold hover:bg-slate-50 transition">View Our Process</a>
+            </div>
+        </div>
+    </header>
 
-			<!-- Definition -->
-				<section id="definition">
-					<div class="definition-inner">
-						<p class="term">clean&nbsp;slate</p>
-						<p class="pos"><em>noun</em></p>
-						<p class="def">a fresh start, free of assumptions — a chance to build something the right way, from the ground up.</p>
-					</div>
-				</section>
+    <!-- Value Proposition -->
+    <section id="how" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Your People are Your Best Asset. <br><span class="text-blue-700">We Just Make Them Superpowers.</span></h2>
+                <p class="text-xl text-slate-600 max-w-3xl mx-auto">Most agencies try to sell you an expensive software suite you don't know how to use. We do things differently. We believe in the power of training and the optimization of the assets you already have.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 border border-slate-100 bg-slate-50 rounded-2xl shadow-sm">
+                    <i data-lucide="git-branch" class="mb-4 text-blue-700 w-12 h-12"></i>
+                    <h3 class="text-xl font-bold mb-4">Process Improvement</h3>
+                    <p class="text-slate-600">Replacing "chaos" with repeatable systems (JIRA, Kanban, and custom workflows) so your team can move with certainty.</p>
+                </div>
+                <div class="p-8 border border-slate-100 bg-slate-50 rounded-2xl shadow-sm">
+                    <i data-lucide="zap" class="mb-4 text-blue-700 w-12 h-12"></i>
+                    <h3 class="text-xl font-bold mb-4">Efficiency Design</h3>
+                    <p class="text-slate-600">Identifying bottlenecks in your current operation and smoothing them out to ensure maximum output with minimum friction.</p>
+                </div>
+                <div class="p-8 border border-slate-100 bg-slate-50 rounded-2xl shadow-sm">
+                    <i data-lucide="users" class="mb-4 text-blue-700 w-12 h-12"></i>
+                    <h3 class="text-xl font-bold mb-4">Mentorship</h3>
+                    <p class="text-slate-600">We don't just do the work for you; we train your younger talent to lead, ensuring your business remains scalable as you grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<!-- Footer -->
-				<section id="footer">
-					<div id="copyright">
-						&copy; 2026 Clean Slate Mods
-					</div>
-				</section>
+    <!-- Pillars Section -->
+    <section id="pillars" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl md:text-5xl font-bold mb-16 text-center">Our Consultancy Pillars</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">CRM & Lifecycle</h3>
+                    <p class="text-slate-300 text-sm">Implementing RFM models to increase customer lifetime value and retention.</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Revenue Operations</h3>
+                    <p class="text-slate-300 text-sm">Establishing multi-brand KPIs and data-driven reporting to see exactly where your money is going.</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Scalable Content</h3>
+                    <p class="text-slate-300 text-sm">Leveraging influencer programs and viral content strategies to build massive brand awareness.</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Global Brand Strategy</h3>
+                    <p class="text-slate-300 text-sm">Giving local small businesses the "Fortune 500" playbook for international activation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		</div>
+    <!-- Proof Section -->
+    <section id="proof" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-blue-50 rounded-3xl p-10 md:p-20">
+                <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center">A Track Record of Transformation</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div>
+                        <div class="text-5xl font-extrabold text-blue-700">$150MM+</div>
+                        <p class="mt-2 text-slate-600 font-medium">Retail sales rebounds through operational discipline.</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-extrabold text-blue-700">$1.2MM+</div>
+                        <p class="mt-2 text-slate-600 font-medium">Consistent annual channel growth.</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-extrabold text-blue-700">65:1</div>
+                        <p class="mt-2 text-slate-600 font-medium">ROI on high-impact video ad formats.</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-extrabold text-blue-700">30%</div>
+                        <p class="mt-2 text-slate-600 font-medium">Increase in customer retention via CRM.</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-extrabold text-blue-700">$10MM+</div>
+                        <p class="mt-2 text-slate-600 font-medium">Managed budgets for global brand activations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Big Brand Expertise. <br><span class="text-blue-700">Small Business Focus.</span></h2>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        With over 15 years of experience leading marketing for brands like Goodyear, Victoria’s Secret, and Abercrombie & Fitch, I’ve seen what it takes to move the needle at the highest levels of retail and e-commerce.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Now, I’m bringing that 'big brand' expertise to the small business community. My mission is to provide small business owners with the tools, systems, and mentorship they need to scale sustainably.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2 bg-slate-200 h-80 rounded-3xl flex items-center justify-center text-slate-400 italic">
+                    [Insert Professional Portrait Here]
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<script>
-				(function () {
-					var form = document.getElementById('signup-form');
-					var fineprint = document.getElementById('signup-fineprint');
-					if (!form) return;
-					form.addEventListener('submit', function (e) {
-						e.preventDefault();
-						var formData = new FormData(form);
-						var submitBtn = form.querySelector('button');
-						submitBtn.disabled = true;
-						submitBtn.textContent = 'Sending...';
-						fetch(form.action, {
-							method: 'POST',
-							body: formData,
-							headers: { 'Accept': 'application/json' }
-						}).then(function (response) {
-							if (response.ok) {
-								form.style.display = 'none';
-								fineprint.outerHTML = '<p class="form-success">You\'re on the list. We\'ll be in touch.</p>';
-							} else {
-								submitBtn.disabled = false;
-								submitBtn.textContent = 'Get Early Access';
-								fineprint.textContent = 'Something went wrong — please try again.';
-							}
-						}).catch(function () {
-							submitBtn.disabled = false;
-							submitBtn.textContent = 'Get Early Access';
-							fineprint.textContent = 'Something went wrong — please try again.';
-						});
-					});
-				})();
-			</script>
+    <!-- Lead Magnet -->
+    <section id="lead" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">Want to see the blueprint?</h2>
+            <p class="text-slate-600 mb-10 text-lg">Join our newsletter to receive monthly deep-dives into process improvement, CRM tips, and operational strategies for small businesses.</p>
+            <form class="flex flex-col sm:flex-row gap-4 justify-center">
+                <input type="email" placeholder="Enter your email" class="px-6 py-4 rounded-lg border border-slate-300 w-full sm:w-96 focus:outline-none focus:ring-2 focus:ring-blue-700" required>
+                <button type="submit" class="bg-blue-700 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-800 transition">Stay Informed</button>
+            </form>
+            <p class="mt-4 text-sm text-slate-400">Turn your operations into a growth engine.</p>
+        </div>
+    </section>
 
-	</body>
+    <!-- Footer -->
+    <footer class="py-10 bg-slate-50 border-t border-slate-200 text-center text-slate-500 text-sm">
+        <p>&copy; 2023 Clean Slate Mods. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
 </html>
