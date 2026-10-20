@@ -24,7 +24,7 @@
     <header class="sticky top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200 shadow-lg">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Logo (Primary Navigation Point) -->
-            <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-slate0-900">Clean Slate <span class="text-blue-700">Investments </span></a>
+            <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-slate-900">Clean Slate <span class="text-blue-700">Investments </span></a>
             <!-- Minimal Nav -->
             <nav class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
                 <a href="index.html" class="hover:text-blue-700 transition">Investing</a>
@@ -39,11 +39,11 @@
             <div data-aos="fade-right">
                 <span class="uppercase tracking-[0.3em] text-blue-400 font-bold text-sm">Scale Your Business</span>
                 <h1 class="mt-4 text-5xl md:text-6xl font-extrabold leading-tight">Strategic <span class="text-blue-500">Marketing & Operations</span> Support</h1>
-                <p class="mt-6 text-xl text-slate-300 leading-relaxed">
+                <p class="mt-6 text-xl text-slate::300 leading-relaxed">
                     We provide the expertise and execution your business needs to grow, from professional marketing campaigns to streamlined operations.
                 </p>
                 <div class="mt-10">
-                    <a href="index.html#lead" class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition inline-block">Grow My Business</a>
+                    <a href="#get-started" class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition inline-block">Grow My Business</a>
                 </div>
             </div>
             <div class="relative" data-aos="fade-left">
@@ -77,7 +77,7 @@
                     <div class="w-14 h-14 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-700 group-hover:text-white transition-colors">
                         <i data-lucide="trending-up" class="w-8 h-8"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Marketing Operations</h3>
+                    <h3 class="text-2xl font-bold text-slateary-900 mb-4">Marketing Operations</h3>
                     <p class="text-slate-600 leading-relaxed">We manage your daily marketing operations for Paid Ads, Email Marketing, and Media Buys so you can focus on managing the business.</p>
                 </div>
 
@@ -109,7 +109,7 @@
                 </div>
 
                 <!-- 6. Industry Expertise -->
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300 group" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-8 rounded-3xl bg-slate_50 border border-slate-100 hover:shadow-xl transition duration-300 group" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-14 h-14 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-700 group-hover:text-white transition-colors">
                         <i data-lucide="award" class="w-8 h-8"></i>
                     </div>
@@ -128,7 +128,47 @@
         <div class="max-w-4xl mx-auto text-center relative z-10" data-aos="zoom-in">
             <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-8">Ready to Grow?</h2>
             <p class="text-xl text-blue-100 mb-12">Stop managing the details and start leading. Let's build a scalable machine for your business together.</p>
-            <a href="index.html#lead" class="bg-white text-blue-700 px-12 py-5 rounded-full font-extrabold text-xl hover:bg-blue-50 transition-all shadow-2xl inline-block">Get Started Now</a>
+            <a href="#get-started" class="bg-white text-blue-700 px-12 py-5 rounded-full font-extrabold text-xl hover:bg-blue-50 transition-all shadow-2xl inline-block">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Get Started Form Section -->
+    <section id="get-started" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4">Get Started Today</h2>
+                <p class="text-slate-600 text-xl">Fill out the form below and our team will get in touch with you shortly.</p>
+            </div>
+
+            <form class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="flex flex-col gap-2">
+                        <label for="business_name" class="text-sm font-semibold text-slate-700">Business Name</label>
+                        <input type="text" id="business_name" name="business_name" placeholder="Your Business Name" class="px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-700 focus:border-transparent outline-none transition" required>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="first_name" class="text-sm font-semibold text-slate-700">First Name</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="First Name" class="px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-700 focus:border-transparent outline-none transition" required>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="last_name" class="text-sm font-semibold text-slateed-700">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Last Name" class="px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-700 focus:border-transparent outline-none transition" required>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="phone" class="text-sm font-semibold text-slate-700">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" class="px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-700 focus:border-transparent outline-none transition" required>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 mb-6">
+                    <label for="email" class="text-sm font-semibold text-slate-700">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" class="px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-700 focus:border-transparent outline-none transition" required>
+                </div>
+                <div class="flex flex-col gap-2 mb-8">
+                    <label for="message" class="text-sm font-semibold text-slate-700">What can we do for you?</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals or specific needs..." class="px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-700 focus:border-transparent outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-700 text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-800 transition shadow-lg">Send Request</button>
+            </form>
         </div>
     </section>
 
